@@ -34,7 +34,7 @@ services:
       # All containers will join this network
       DOCKER_NETWORK_NAME: jupyterhub-network
       # JupyterHub will spawn this Notebook image for users
-      DOCKER_NOTEBOOK_IMAGE: ghcr.io/bjoernellens1/cps-jupyter-notebook:latest # jupyter/minimal-notebook:latest Common useful utilities like curl, git, nano (actually nano-tiny), tzdata, unzip and vi (actually vim-tiny), TeX Live for notebook document conversion
+      DOCKER_NOTEBOOK_IMAGE: ghcr.io/bjoernellens1/cps-jupyter-notebook:main # jupyter/minimal-notebook:latest Common useful utilities like curl, git, nano (actually nano-tiny), tzdata, unzip and vi (actually vim-tiny), TeX Live for notebook document conversion
       # Notebook directory inside user image
       DOCKER_NOTEBOOK_DIR: /home/jovyan/work
       # For OAUTH
